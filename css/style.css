@@ -1,0 +1,552 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 95vh;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00FFCA;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -----------------------------
+            web-design
+    --------------------------- */
+
+.header-design {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 3%;
+    position: relative;
+    z-index: 888;
+    background-color: #010914;
+}
+
+.header-design .left-head {
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.header-design .left-head .des-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 31%;
+    letter-spacing: 2px;
+}
+
+.left-head .error {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.header-design .mail-me i {
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.header-design i:hover {
+    background-color: #ffffff30;
+}
+
+/* --------------------- section ---------------------- */
+
+.section {
+    display: flex;
+    background-color: #010914;
+}
+
+.section .left-icons-pre {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section .icons-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+    width: 93px;
+}
+
+.icons-web i {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 2em;
+}
+
+.left-icons-pre .prv {
+    color: #fff;
+    width: 93px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 22vh;
+}
+
+
+.section .page-home {
+    width: 35%;
+    height: 65vh;
+    position: relative;
+}
+
+.page-home .title-home {
+    position: absolute;
+    bottom: 20px;
+    right: 42%;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.title-home::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #00FFCA;
+}
+
+.section .img-forest {
+    width: 60%;
+    height: 557px;
+    background-image: url("../images/50196232946_e277b906f3_k.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img-forest::before {
+    content: "NEXT";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 202 , .4);
+    color: white;
+    display: grid;
+    place-items: center;
+    letter-spacing: 1px;
+}
+
+.img-forest::after {
+    content: "THE PAGE YOU'RE LOOKING FOR IS MISSING";
+    position: absolute;
+    bottom: 8%;
+    left: -35%;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.img-forest .hmm {
+    position: absolute;
+    left: -42%;
+    top: 10%;
+    -webkit-text-stroke: 2px #010914;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.img-forest .hmm::before {
+    content: attr(data-txt); 
+    position: absolute;
+    width: 73%;
+    background-color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    overflow: hidden;
+}
+
+
+.img-forest .you-lost {
+    position: absolute;
+    left: -41%;
+    top: 30%;
+    width: fit-content;
+    font-size: 120px;
+    -webkit-text-stroke: 2px #010914;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+}
+
+.you-lost::before {
+    content: attr(data-txt);
+    position: absolute;
+    width: 45%;
+    -webkit-text-stroke: 2px #fff;
+    overflow: hidden;
+}
+
+/* ------------------- about - us ---------------------- */
+
+.about-us {
+    width: 100%;
+    height: 104vh;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #010914;
+    position: relative;
+}
+
+.about-us::before {
+    content: "";
+    position: absolute;
+    bottom: 1%;
+    right: 33%;
+    width: 215px;
+    height: 150px;
+    background-image: radial-gradient( #ffffff30 10% , transparent 10% );
+    background-size: 25px 25px;
+}
+
+
+.about-us .heading-us {
+    color: #fff;
+    width: fit-content;
+    margin-left: 7%;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.heading-us::before {
+    content: "";
+    position: absolute;
+    right: -6rem;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(321deg);
+}
+
+
+.heading-us::after {
+    content: "";
+    position: absolute;
+    right: -12rem;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(321deg);
+}
+
+.flex-about-us {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2%;
+}
+
+.flex-about-us p {
+    color: #fff;
+    width: 550px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    position: relative;
+}
+
+p::before {
+    content: "Forest";
+    position: absolute;
+    top: 20px;
+    left: -87px;
+    color: #ffffff14;
+    font-size: 168px;
+}
+
+.flex-about-us .img-amount {
+    width: 360px;
+    height: 430px;
+    background-image: url("../images/50134069181_62a298e595_k.jpg") ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img-amount::after {
+    content: "ABOUT US";
+    position: absolute;
+    top: 8px;
+    right: -15%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    writing-mode: vertical-lr;
+    font-size: 56px;
+}
+
+
+/* ----------------- page-three--------------- */
+
+.page-three {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #010914;
+}
+
+.page-three p {
+    color: #fff;
+    line-height: 40px;
+    letter-spacing: 1px;
+    width: 550px;
+    position: relative;
+}
+
+.page-three p::before {
+    content: "Hiking";
+    position: absolute;
+    top: 20px;
+    left: -87px;
+    color: #ffffff14;
+    font-size: 175px;
+}
+
+
+.page-three .img-hiker {
+    background-image: url("../images/50133439713_cb0e4db082_k.jpg");
+    width: 400px;
+    height: 530px;
+    border-radius: 11px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* -----------------------------------
+            comping
+    ---------------------------------- */
+
+.comping {
+    width: 100%;
+    height: 105vh;
+    padding: 1% 0;
+    background-color: #010914;
+}
+
+.comping .heading-group {
+    width: fit-content;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 37px;
+    margin-left: 8%;
+    margin-top: 3%;
+    position: relative;
+}
+
+
+.heading-group::before {
+    content: "";
+    position: absolute;
+    right: -6rem;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(321deg);
+}
+
+.heading-group::after {
+    content: "";
+    position: absolute;
+    right: -12rem;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(321deg);
+}
+
+.comping .group-com {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
+.group-com :is(.com-tent, .fire, .route) {
+    width: 300px;
+    height: 250px;
+    background-color: #091930;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3%;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.com-tent:hover {
+    transform: translateY(-15px);
+    border: 1px solid #00FFCA;
+    box-shadow: 0 0 8px #00FFCA;
+}
+
+.fire:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 8px #00FFCA;
+    border: 1px solid #00FFCA;
+}
+
+.route:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 8px #00FFCA;
+    border: 1px solid #00FFCA;
+}
+
+.group-com .com-tent::before {
+    content: "01";
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    color: #0573651c;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.group-com .fire::before {
+    content: "02";
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    color: #0573651c;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.group-com .route::before {
+    content: "03";
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    color: #0573651c;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.com-tent i ,
+.fire i ,
+.route i {
+    width: 55px;
+    height: 55px;
+    background-color: #00FFCA;
+    color: #010914;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-bottom: 15%;
+}
+
+
+.com-tent .name-hik ,
+.fire .name-fire,
+.route .name-route {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+
+/* -------------- footer ----------------- */
+
+.footer {
+    background-color: #051122;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.footer .fot-title {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer .fot-error {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.footer div:last-child {
+    color: #fff;
+    font-size: 28px;
+}
+
+
+/* to-top */
+
+.to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 23px;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #00FFCA;
+    display: grid;
+    place-items: center;
+}
+
+.to-top i {
+    font-size: 20px;
+    color: #010914;
+}
+
+
+

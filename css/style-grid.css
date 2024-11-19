@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-violet:hsl(263, 55%, 52%);
+    --dark-grayish-blue:hsl(217, 19%, 35%);
+    --dark-blackish-blue:hsl(219, 29%, 14%);
+    --color-white:hsl(0, 0%, 100%);
+    --light-gray:hsl(0, 0%, 81%);
+    --light-grayish-blue:hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--light-grayish-blue)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 130vh;
+
+}
+
+.testimo {
+    display: grid!important;
+    grid-template-columns: repeat(6 , auto);
+}
+
+.testimo .box1 {
+    grid-column: span 4;
+}
+.testimo .box2 {
+    grid-column: span 1;
+}
+.testimo .box3 {
+    grid-row: span 2!important;
+}
+.testimo .box4 {
+    grid-column: span 1!important;
+}
+.testimo .box5 {
+    grid-column: span 4!important;
+}
+@media (max-width: 767px) {
+    .testimo .box1 {
+        grid-column: span 5!important;
+    }
+    .testimo .box2 {
+        grid-column: span 5!important;
+    }
+    .testimo .box3 {
+        grid-column: span 5!important;
+    }
+    .testimo .box4 {
+        grid-column: span 5!important;
+    }
+    .testimo .box5 {
+        grid-column: span 5!important;
+    }
+}
+.box1 {
+    background-color: var(--color-violet);
+}
+.box2 {
+    background-color: var(--dark-grayish-blue);
+}
+.box3 {
+    background-color: var(--color-white);
+}
+.box4 {
+    background-color: var(--color-white);
+}
+.box5 {
+    background-color: var(--dark-blackish-blue);
+}
+.name-page img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+}
+.name-page .txt-name .content {
+    font-size: 13px;
+    color: var(--light-gray);
+}
+.first-paragraph {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.second-paragraph {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--light-gray);
+}
+.box3 .first-paragraph,
+.box4 .first-paragraph {
+    color: var(--dark-blackish-blue)!important;
+}
+.box3 .second-paragraph,
+.box4 .second-paragraph {
+    color: var(--dark-grayish-blue)!important;
+}
+
+.box3 h6 ,
+.box4 h6 {
+    color: var(--dark-blackish-blue)!important;
+}
+.box3,
+.box4 {
+    box-shadow: 8px 30px 30px var(--light-gray);
+}
+.box1 {
+    z-index: 8;
+}
+.quotation {
+    top: 0;
+    right: 6rem;
+    z-index: -1;
+}
+
